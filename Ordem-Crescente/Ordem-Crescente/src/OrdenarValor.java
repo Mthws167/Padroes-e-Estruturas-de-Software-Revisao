@@ -10,7 +10,7 @@ class OrdenarValor {
 		
 		
 		for ( i = 0; i <= quantidade-1; i++) {
-			String numeros = JOptionPane.showInputDialog(null, "Informe os números desejados:");
+			String numeros = JOptionPane.showInputDialog(null, "Informe os nÃºmeros desejados:");
 			valor[i] = Integer.parseInt(numeros);
 			
 		}
