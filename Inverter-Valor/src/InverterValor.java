@@ -8,10 +8,14 @@ class InverterValor {
 		String lista = "";
 
 		for (int i = valor.length - 1; i >= 0; i--) {
-				lista += valor[i];
+			if (lista.length() == 0) {
+				lista = valor[i];
+			} else {
+				lista += "," + valor[i];
 			}
-		String todoValor[] = lista.split("");
-		JOptionPane.showMessageDialog(null, String.join(",", todoValor)+".");
+
+		}
+		JOptionPane.showMessageDialog(null,lista);
 	}
 
 }
