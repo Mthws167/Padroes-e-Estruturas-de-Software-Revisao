@@ -19,17 +19,26 @@ public class CarrinhoControle {
 		itens.setQuantidade(quantidade);
 		itens.setValorUnitario(valorUnitario);
 		carrinhoItens.add(itens);
+
 	}
 
 	public void removerItem() {
-
+		
+		ItensCarrinho itens = new ItensCarrinho();
+		itens.getCarrinho();
+		itens.getProduto();
+		itens.getQuantidade();
+		itens.getValorUnitario();
+		carrinhoItens.remove(itens);
 	}
 	
+
 	@Override
 	public String toString() {
-		//Imprimir resultados
-		
-		return "" ;
+		String resultado="";
+		for(int i=0; i<carrinhoItens.size();i++) {
+			resultado="Nome do Produto: \n"+carrinhoItens.get(i).getProduto().getNome()+"\n";
+		}
+		return resultado;
 	}
-
 }
