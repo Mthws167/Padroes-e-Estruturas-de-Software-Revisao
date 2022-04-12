@@ -37,7 +37,9 @@ public class CarrinhoControle {
 	public String toString() {
 		String resultado="";
 		for(int i=0; i<carrinhoItens.size();i++) {
-			resultado="Nome do Produto: \n"+carrinhoItens.get(i).getProduto().getNome()+"\n";
+			resultado = "Produto: \n"+carrinhoItens.get(i).getProduto().getNome()+"\n"
+					+"Preço: \n"+"R$ "+carrinhoItens.get(i).getValorUnitario()+"\n"
+					+"Quantidade: \n"+carrinhoItens.get(i).getQuantidade()+" sobrando"+"\n";
 		}
 		return resultado;
 	}
