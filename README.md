@@ -1,1 +1,1 @@
-<b>Verificar as Branchs</b>
+<b>Verificar as Branches</b>
